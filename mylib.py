@@ -71,7 +71,7 @@ def caballo_llega_a_todo(f: int, c: int, pos: Tuple[int, int]) -> Tuple[bool, li
     >>> caballo_llega_a_todo(3, 3, (0, 0)) # doctest: +ELLIPSIS
     (False, None)
     >>> caballo_llega_a_todo(5, 5, (2, 2)) # doctest: +ELLIPSIS
-    Tru
+    (True, ...)
     '''
     if not(0 <= pos[0] < f and 0 <= pos[1] < c):
         raise ValueError("Posición inicial fuera de los límites de la matriz")
